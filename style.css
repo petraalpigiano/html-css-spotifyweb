@@ -9,15 +9,7 @@ a {
   color: inherit;
 }
 
-/* REGOLE UTILITY
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.row {
-  display: flex;
-} */
+/* REGOLE UTILITY */
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -26,45 +18,20 @@ a {
 
 /* CUSTOM PROPERTIES */
 :root {
-  --player-height: 90px;
-  --content-header-height: 100px;
+  --player-height: 80px;
+  --content-header-height: 80px;
   --sidebar-width: 50px;
 }
 
-/* PER VEDERE I CONTAINER */
+/* PER VEDERE I CONTAINER 
 .debug * {
   min-height: 50px;
   padding: 5px;
   background-color: rgba(255, 0, 0, 0.236);
   border: 2px dashed red;
-}
-
-/* GRIGLIA DI COLONNE 
-.container {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1rem;
-
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
-[class*="col"] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.col-1-2 {
-  width: calc(100% / 2);
 }*/
+
+/* XS FINO A 552PX */
 
 /* TOP PART */
 #top-part {
@@ -74,21 +41,49 @@ a {
 /* SIDEBAR */
 #sidebar {
   width: var(--sidebar-width);
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sidebar img {
+  max-width: 50%;
+}
+.top-icons,
+.bottom-icons {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* CONTENT BLOCK */
 #content-block {
   width: calc(100vw - var(--sidebar-width));
+  overflow: auto;
 }
 #content-header {
   height: var(--content-header-height);
+  background-color: #000000;
 }
 #content-main {
   height: calc(100vh - var(--content-header-height) - var(--player-height));
-  overflow: auto;
+  background-color: #141922;
 }
 
 /* PLAYER */
 #player {
   height: var(--player-height);
+  background-color: #282828;
+}
+
+/* RESPONSIVE */
+
+/* S 553PX-639PX */
+@media screen and (min-width: 553px) {
+}
+/* MD 640PX-878PX */
+@media screen and (min-width: 640px) {
+}
+/* LG 879PX-1440PX */
+@media screen and (min-width: 879px) {
 }
