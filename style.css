@@ -18,6 +18,18 @@ a {
 .row {
   display: flex;
 } */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+  --player-height: 90px;
+  --content-header-height: 100px;
+  --sidebar-width: 50px;
+}
 
 /* PER VEDERE I CONTAINER */
 .debug * {
@@ -27,7 +39,7 @@ a {
   border: 2px dashed red;
 }
 
-/* GRIGLIA DI COLONNE */
+/* GRIGLIA DI COLONNE 
 .container {
   max-width: 1180px;
   margin-left: auto;
@@ -52,4 +64,31 @@ a {
 
 .col-1-2 {
   width: calc(100% / 2);
+}*/
+
+/* TOP PART */
+#top-part {
+  display: flex;
+  height: calc(100vh - var(--player-height));
+}
+/* SIDEBAR */
+#sidebar {
+  width: var(--sidebar-width);
+}
+
+/* CONTENT BLOCK */
+#content-block {
+  width: calc(100vw - var(--sidebar-width));
+}
+#content-header {
+  height: var(--content-header-height);
+}
+#content-main {
+  height: calc(100vh - var(--content-header-height) - var(--player-height));
+  overflow: auto;
+}
+
+/* PLAYER */
+#player {
+  height: var(--player-height);
 }
