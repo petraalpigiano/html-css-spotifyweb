@@ -127,15 +127,29 @@ hr {
   color: #6b6b6b;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 .song {
   display: flex;
+  align-items: center;
 }
 .song img {
   width: 2rem;
 }
 .song h5 {
   color: white;
+}
+.song-name {
+  padding-left: 0.5rem;
+  padding-right: 1.3rem;
+}
+.song-name p {
+  font-size: 0.8rem;
+}
+.icons i {
+  display: block;
+  padding-bottom: 0.2rem;
 }
 .min-line {
   background-color: #5a5a5a;
@@ -196,10 +210,20 @@ hr {
     align-items: center;
   }
   /* PLAYER */
+  .song br {
+    display: none;
+  }
 }
 /* MD 640PX-878PX */
 @media screen and (min-width: 640px) {
   /* PLAYER */
+  .icons i {
+    display: inline-block;
+    padding-left: 0.8rem;
+  }
+  .song-name {
+    padding-right: 2rem;
+  }
 }
 /* LG 879PX-1440PX */
 @media screen and (min-width: 879px) {
