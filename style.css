@@ -27,13 +27,13 @@ li {
   --sidebar-width: 50px;
 }
 
-/* PER VEDERE I CONTAINER */
+/* PER VEDERE I CONTAINER 
 .debug * {
   min-height: 50px;
   padding: 5px;
   background-color: rgba(255, 0, 0, 0.236);
   border: 2px dashed red;
-}
+}*/
 
 /* XS FINO A 552PX */
 
@@ -66,6 +66,26 @@ li {
 .nav span {
   display: none;
 }
+.playlist {
+  display: none;
+}
+.playlist h4 {
+  color: white;
+}
+.new-playlist {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #a3a3a3;
+}
+
 /*
 .sidebar p,
 hr {
@@ -124,7 +144,8 @@ hr {
     display: none;
   }
   .nav,
-  .logo {
+  .logo,
+  .playlist {
     padding-left: 1rem;
   }
   .nav li {
@@ -136,6 +157,9 @@ hr {
   .link {
     display: flex;
     align-items: center;
+  }
+  .playlist {
+    display: block;
   }
 
   /* 
