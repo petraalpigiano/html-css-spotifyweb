@@ -133,7 +133,6 @@ hr {
 .song {
   display: flex;
   align-items: center;
-  padding-right: 1.5rem;
 }
 .song img {
   width: 2rem;
@@ -162,7 +161,8 @@ hr {
   width: 100%;
 }
 .top-commands {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .top-commands i {
   font-size: 1.3rem;
@@ -181,14 +181,21 @@ hr {
 .bottom-commands p {
   font-size: 0.8rem;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .controls {
   display: flex;
 }
+.controls i {
+  padding-right: 1rem;
+}
 .volume {
   display: flex;
+  align-items: center;
+}
+.two {
+  width: 10rem;
 }
 
 /* RESPONSIVE */
@@ -250,8 +257,11 @@ hr {
     padding-right: 2rem;
   }
   .bottom-commands p {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .two {
+    width: 20rem;
   }
 }
 /* LG 879PX-1440PX */
