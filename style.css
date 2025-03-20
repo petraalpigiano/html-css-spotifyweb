@@ -9,6 +9,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+li {
+  list-style-type: none;
+}
 
 /* REGOLE UTILITY */
 .wrapper {
@@ -24,13 +27,13 @@ a {
   --sidebar-width: 50px;
 }
 
-/* PER VEDERE I CONTAINER 
+/* PER VEDERE I CONTAINER */
 .debug * {
   min-height: 50px;
   padding: 5px;
   background-color: rgba(255, 0, 0, 0.236);
   border: 2px dashed red;
-}*/
+}
 
 /* XS FINO A 552PX */
 
@@ -39,15 +42,31 @@ a {
   display: flex;
   height: calc(100vh - var(--player-height));
 }
-/* SIDEBAR 
+/* SIDEBAR */
 .sidebar {
   width: var(--sidebar-width);
   background-color: #000000;
   color: #6b6b6b;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
+.logo {
+  text-align: center;
+}
+.sidebar .logo-big {
+  display: none;
+}
+.sidebar .logo-small {
+  width: 2rem;
+}
+.nav img {
+  width: 2rem;
+}
+.nav li {
+  text-align: center;
+}
+.nav span {
+  display: none;
+}
+/*
 .sidebar p,
 hr {
   display: none;
@@ -94,12 +113,32 @@ hr {
 
 /* S 553PX-639PX */
 @media screen and (min-width: 553px) {
-  /*  
   .sidebar {
     width: calc(var(--sidebar-width) + 300px);
-    padding-right: 1rem;
+  }
+  .sidebar .logo-big {
+    display: block;
+    width: 150px;
+  }
+  .sidebar .logo-small {
+    display: none;
+  }
+  .nav,
+  .logo {
     padding-left: 1rem;
   }
+  .nav li {
+    text-align: left;
+  }
+  .nav span {
+    display: block;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 
   .sidebar p,
   hr {
     display: inline-block;
