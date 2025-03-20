@@ -125,6 +125,8 @@ hr {
   height: var(--player-height);
   background-color: #282828;
   color: #6b6b6b;
+  display: flex;
+  justify-content: space-between;
 }
 .song {
   display: flex;
@@ -134,6 +136,20 @@ hr {
 }
 .song h5 {
   color: white;
+}
+.min-line {
+  background-color: #5a5a5a;
+  height: 4px;
+  width: 20px;
+}
+.bottom-commands {
+  display: flex;
+}
+.controls {
+  display: flex;
+}
+.volume {
+  display: flex;
 }
 
 /* RESPONSIVE */
