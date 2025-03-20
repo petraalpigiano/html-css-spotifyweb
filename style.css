@@ -85,6 +85,26 @@ li {
   height: 40px;
   background-color: #a3a3a3;
 }
+.user-download {
+  margin-top: auto;
+  text-align: center;
+}
+.user-download hr {
+  color: #6b6b6b;
+}
+.user img {
+  width: 2rem;
+}
+.user-download span,
+hr {
+  display: none;
+}
+.download img {
+  width: 1rem;
+}
+.user span {
+  color: white;
+}
 
 /*
 .sidebar p,
@@ -145,7 +165,8 @@ hr {
   }
   .nav,
   .logo,
-  .playlist {
+  .playlist,
+  .user-download {
     padding-left: 1rem;
   }
   .nav li {
@@ -160,6 +181,15 @@ hr {
   }
   .playlist {
     display: block;
+  }
+  .user-download span,
+  hr {
+    display: block;
+  }
+  .download,
+  .user {
+    display: flex;
+    align-items: center;
   }
 
   /* 
