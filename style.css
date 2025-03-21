@@ -41,7 +41,7 @@ li {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -62,6 +62,9 @@ li {
 
 .col-1-2 {
   width: calc(100% / 2);
+}
+.col-1-6 {
+  width: calc(100% / 6);
 }
 
 /* XS FINO A 552PX */
@@ -172,7 +175,14 @@ hr {
   padding: 1rem;
   font-size: 0.8rem;
 }
-.recently-played h3 {
+.created-for-you p {
+  font-size: 0.8rem;
+  color: #76787e;
+  font-weight: 900;
+  padding-top: 0.8rem;
+}
+.recently-played h3,
+.created-for-you h3 {
   color: white;
   font-size: 1.3rem;
 }
