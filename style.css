@@ -60,8 +60,8 @@ li {
   padding-right: 0.5rem;
 }
 
-.col-1-6 {
-  width: calc(100% / 6);
+.col-1-2 {
+  width: calc(100% / 2);
 }
 
 /* XS FINO A 552PX */
@@ -139,6 +139,7 @@ hr {
 .content-block {
   width: calc(100vw - var(--sidebar-width));
   overflow: auto;
+  background-color: #141922;
 }
 .content-header {
   height: var(--content-header-height);
@@ -149,7 +150,6 @@ hr {
 }
 .content-main {
   height: calc(100vh - var(--content-header-height) - var(--player-height));
-  background-color: #141922;
 }
 .content-header button {
   color: white;
@@ -170,10 +170,11 @@ hr {
   color: #76787e;
   font-weight: 900;
   padding: 1rem;
+  font-size: 0.8rem;
 }
 .recently-played h3 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .card img {
   max-width: 100%;
@@ -185,7 +186,7 @@ hr {
 .bottom-card h5 {
   color: white;
   padding-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
 }
 .bottom-card p {
   color: #7d7f83;
@@ -274,7 +275,7 @@ hr {
 @media screen and (min-width: 553px) {
   /* SIDEBAR */
   .sidebar {
-    width: calc(var(--sidebar-width) + 300px);
+    width: calc(var(--sidebar-width) + 250px);
   }
   .sidebar .logo-big {
     display: block;
@@ -337,8 +338,15 @@ hr {
   .two {
     width: 7rem;
   }
+  /* MAIN */
+  .col-1-2 {
+    width: calc(100% / 4);
+  }
 }
 /* LG 879PX-1440PX */
 @media screen and (min-width: 879px) {
-  /* PLAYER */
+  /* MAIN */
+  .col-1-2 {
+    width: calc(100% / 6);
+  }
 }
