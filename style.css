@@ -76,6 +76,8 @@ li {
   width: var(--sidebar-width);
   background-color: #000000;
   color: #6b6b6b;
+  display: flex;
+  flex-direction: column;
 }
 .logo {
   text-align: center;
@@ -87,6 +89,8 @@ li {
 }
 .sidebar .logo-small {
   width: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .nav img {
   width: 2rem;
@@ -137,10 +141,12 @@ li {
 }
 .user-download {
   text-align: center;
-  padding-right: 1rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 .user-download hr {
   color: #6d6d6d;
+  margin-right: 1rem;
 }
 .user-download span,
 hr {
