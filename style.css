@@ -114,10 +114,22 @@ hr {
 .content-header {
   height: var(--content-header-height);
   background-color: #000000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .content-main {
   height: calc(100vh - var(--content-header-height) - var(--player-height));
   background-color: #141922;
+}
+.content-header button {
+  color: white;
+  font-size: 0.6rem;
+  background-color: #000000;
+  border: 1px solid #cfcfd0;
+  border-radius: 20px;
+  padding: 0.6rem 2rem;
+  margin-right: 0.5rem;
 }
 
 /* PLAYER */
