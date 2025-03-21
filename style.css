@@ -63,9 +63,6 @@ li {
 .col-1-2 {
   width: calc(100% / 2);
 }
-.col-1-6 {
-  width: calc(100% / 6);
-}
 
 /* XS FINO A 552PX */
 
