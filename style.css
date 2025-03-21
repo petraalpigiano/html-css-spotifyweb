@@ -35,6 +35,35 @@ li {
   border: 2px dashed red;
 }*/
 
+/* GRIGLIA DI COLONNE */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-top: 2rem;
+}
+
+[class*="col"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.col-1-6 {
+  width: calc(100% / 6);
+}
+
 /* XS FINO A 552PX */
 
 /* TOP PART */
@@ -142,7 +171,25 @@ hr {
   font-weight: 900;
   padding: 1rem;
 }
-
+.recently-played h3 {
+  color: white;
+  font-size: 2rem;
+}
+.card img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.bottom-card {
+  text-align: center;
+}
+.bottom-card h5 {
+  color: white;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.bottom-card p {
+  color: #7d7f83;
+}
 /* PLAYER */
 .player {
   height: var(--player-height);
