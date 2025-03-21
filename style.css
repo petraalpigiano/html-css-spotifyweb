@@ -82,6 +82,8 @@ li {
 }
 .sidebar .logo-big {
   display: none;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 .sidebar .logo-small {
   width: 2rem;
@@ -91,21 +93,37 @@ li {
 }
 .nav li {
   text-align: center;
+  padding-bottom: 0.8rem;
 }
 .nav span {
   display: none;
+  padding-left: 0.3rem;
+  font-weight: 600;
 }
 .playlist {
   display: none;
+  overflow: auto;
 }
 .playlist h4 {
   color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.playlist li {
+  padding-bottom: 1rem;
+  font-weight: 600;
 }
 .new-playlist {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
+.new-playlist span {
+  font-weight: 600;
+}
+
 .square {
   display: flex;
   justify-content: center;
@@ -114,25 +132,36 @@ li {
   height: 40px;
   background-color: #a3a3a3;
 }
+.square i {
+  font-size: 1.5rem;
+}
 .user-download {
-  margin-top: auto;
   text-align: center;
+  padding-right: 1rem;
 }
 .user-download hr {
-  color: #6b6b6b;
-}
-.user img {
-  width: 2rem;
+  color: #6d6d6d;
 }
 .user-download span,
 hr {
   display: none;
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+.download {
+  padding-bottom: 0.8rem;
 }
 .download img {
   width: 1rem;
 }
+.user {
+  padding-top: 0.5rem;
+}
 .user span {
   color: white;
+}
+.user img {
+  width: 1.5rem;
 }
 
 /* CONTENT BLOCK */
