@@ -142,7 +142,7 @@ hr {
 }
 .song-name {
   padding-left: 0.5rem;
-  padding-right: 1.3rem;
+  padding-right: 1rem;
 }
 .song-name p {
   font-size: 0.8rem;
@@ -166,8 +166,8 @@ hr {
 }
 .top-commands i {
   font-size: 1.3rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
   padding-bottom: 1rem;
 }
 .top-commands i:nth-child(3) {
@@ -195,7 +195,7 @@ hr {
   align-items: center;
 }
 .two {
-  width: 10rem;
+  width: 5rem;
 }
 
 /* RESPONSIVE */
@@ -260,8 +260,12 @@ hr {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .top-commands i {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   .two {
-    width: 20rem;
+    width: 7rem;
   }
 }
 /* LG 879PX-1440PX */
