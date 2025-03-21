@@ -172,14 +172,16 @@ hr {
   padding: 1rem;
   font-size: 0.8rem;
 }
-.created-for-you p {
+.created-for-you p,
+.popular-artists p {
   font-size: 0.8rem;
   color: #76787e;
   font-weight: 900;
   padding-top: 0.8rem;
 }
 .recently-played h3,
-.created-for-you h3 {
+.created-for-you h3,
+.popular-artists h3 {
   color: white;
   font-size: 1.3rem;
 }
