@@ -131,6 +131,17 @@ hr {
   padding: 0.6rem 2rem;
   margin-right: 0.5rem;
 }
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.category p {
+  color: #76787e;
+  font-weight: 900;
+  padding: 1rem;
+}
 
 /* PLAYER */
 .player {
